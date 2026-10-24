@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #151515;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #292929;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        .banner {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .banner h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #8b0000;
+            margin-top: 30px;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(230px, 1fr)
+            );
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .movie-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px #00000025;
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+        }
+
+        .movie-info h3 {
+            color: #8b0000;
+            margin-top: 0;
+        }
+
+        .rating {
+            color: #e69500;
+            font-weight: bold;
+        }
+
+        .review {
+            background-color: #eeeeee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .about {
+            background-color: white;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #151515;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .banner h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .movie-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 Movie World</h1>
+        <p>Your destination for movies and reviews</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h1>Discover Your Favourite Movies</h1>
+        <p>Explore films, meet the cast and check ratings!</p>
+    </section>
+
+    <h2 id="movies">Popular Movies</h2>
+
+    <div class="movie-container">
+
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+                 alt="Oppenheimer movie poster">
+
+            <div class="movie-info">
+                <h3>Oppenheimer</h3>
+                <p><b>Genre:</b> Biography, Drama</p>
+                <p><b>Release Date:</b> July 21, 2023</p>
+                <p><b>Cast:</b> Cillian Murphy, Emily Blunt</p>
+                <p><b>Synopsis:</b> A historical drama about physicist
+                J. Robert Oppenheimer and the development of the atomic bomb.</p>
+                <p class="rating">★ Rating: 8.3/10</p>
+                <p class="review">Critic Review: A powerful historical drama
+                with impressive performances.</p>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+                 alt="The Dark Knight movie poster">
+
+            <div class="movie-info">
+                <h3>The Dark Knight</h3>
+                <p><b>Genre:</b> Action, Crime, Drama</p>
+                <p><b>Release Date:</b> July 18, 2008</p>
+                <p><b>Cast:</b> Christian Bale, Heath Ledger</p>
+                <p><b>Synopsis:</b> Batman faces the Joker, a criminal
+                who creates chaos across Gotham City.</p>
+                <p class="rating">★ Rating: 9.0/10</p>
+                <p class="review">Critic Review: An intense superhero film
+                with memorable performances.</p>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                 alt="Interstellar movie poster">
+
+            <div class="movie-info">
+                <h3>Interstellar</h3>
+                <p><b>Genre:</b> Science Fiction, Adventure</p>
+                <p><b>Release Date:</b> November 7, 2014</p>
+                <p><b>Cast:</b> Matthew McConaughey, Anne Hathaway</p>
+                <p><b>Synopsis:</b> Astronauts travel through space in
+                search of a new home for humanity.</p>
+                <p class="rating">★ Rating: 8.7/10</p>
+                <p class="review">Critic Review: A visually stunning
+                science-fiction adventure.</p>
+            </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/5KCVkau1HEl7ZzfPsKAPM0sMiKc.jpg"
+                 alt="The Lion King movie poster">
+
+            <div class="movie-info">
+                <h3>The Lion King</h3>
+                <p><b>Genre:</b> Animation, Adventure</p>
+                <p><b>Release Date:</b> July 19, 2019</p>
+                <p><b>Cast:</b> Donald Glover, Beyoncé</p>
+                <p><b>Synopsis:</b> Simba learns about responsibility
+                and his place in the circle of life.</p>
+                <p class="rating">★ Rating: 6.8/10</p>
+                <p class="review">Critic Review: Beautiful visuals and
+                a memorable musical soundtrack.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="about" id="reviews">
+        <h2>Movie Reviews</h2>
+        <p>Movie World helps film lovers explore popular movies,
+        learn about actors, read sample critic reviews and discover
+        different genres.</p>
+        <p>Ratings and critic reviews shown here are sample display
+        content and may differ from current published ratings.</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Movie World</h2>
+        <p>Movie World is a student website project created using
+        HTML and CSS. It demonstrates movie cards, images, navigation,
+        responsive layouts and basic web design.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Movie World | B.Tech First-Year Project</p>
+    </footer>
+
+</body>
+</html>
