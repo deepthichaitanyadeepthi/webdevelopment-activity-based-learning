@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fc;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav h2 {
+            color: white;
+            margin: 0 0 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 50px 15px;
+        }
+
+        .banner h1 {
+            font-size: 32px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* Information Cards */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        .card h3 {
+            color: #003366;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .banner h1 {
+                font-size: 25px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>ABC Engineering College</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h1>Welcome to ABC Engineering College</h1>
+        <p>Learn Today, Lead Tomorrow!</p>
+        <p>Building Knowledge, Skills and Innovation</p>
+    </section>
+
+    <!-- About College -->
+    <section class="container" id="about">
+        <h2>About Our College</h2>
+        <p>
+            ABC Engineering College provides quality education
+            and encourages students to develop technical skills,
+            creativity and leadership.
+        </p>
+    </section>
+
+    <!-- Departments and Courses -->
+    <section class="container" id="departments">
+        <h2>Departments and Courses</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Computer Science</h3>
+                <p>Course: B.Tech CSE</p>
+                <p>Learn programming and software development.</p>
+            </div>
+
+            <div class="card">
+                <h3>Electronics</h3>
+                <p>Course: B.Tech ECE</p>
+                <p>Learn electronic circuits and communication.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mechanical</h3>
+                <p>Course: B.Tech ME</p>
+                <p>Learn machines and manufacturing technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="container" id="faculty">
+        <h2>Our Faculty</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Dr. Ravi Kumar</h3>
+                <p>Professor - Computer Science</p>
+            </div>
+
+            <div class="card">
+                <h3>Mrs. Priya</h3>
+                <p>Assistant Professor - Electronics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions -->
+    <section class="container" id="admissions">
+        <h2>Admissions</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Admission Procedure</h3>
+                <p>Check eligibility, submit the application
+                and provide the required documents.</p>
+            </div>
+
+            <div class="card">
+                <h3>Required Documents</h3>
+                <p>Academic certificates, entrance exam details,
+                identity proof and photographs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Facilities -->
+    <section class="container" id="facilities">
+        <h2>Campus Facilities</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Library</h3>
+                <p>Books, journals and study materials.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Labs</h3>
+                <p>Computers and practical learning facilities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports</h3>
+                <p>Indoor and outdoor sports activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="container" id="events">
+        <h2>College Events</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Technical Fest</h3>
+                <p>Projects, coding competitions and workshops.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cultural Fest</h3>
+                <p>Music, dance and student performances.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@abccollege.edu</p>
+        <p>Phone: 9876543210</p>
+        <p>Address: Vijayawada, Andhra Pradesh</p>
+        <p>&copy; 2026 ABC Engineering College</p>
+    </section>
+
+</body>
+</html>
